@@ -9,7 +9,7 @@ async function getDataFromPage() {
     await page.setViewport({ width: 1280, height: 800 })
     await page.goto('https://www.santaisabel.cl/', { waitUntil: 'networkidle2' })     
     await page.waitForSelector('.new-header-search-input', { visible: true })
-    await page.type('.new-header-search-input', 'frac')
+    await page.type('.new-header-search-input', 'atun lomitos')
     await page.click('.new-header-search-submit')
     await new Promise(resolve => setTimeout(resolve, 4000))    
     try{

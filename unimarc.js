@@ -2,7 +2,7 @@ import puppeteer from 'puppeteer'
 
 async function handleDynamicWebPage() {
     const browser = await puppeteer.launch({
-        headless: 'new',
+        headless: false,
     })
     const page = await browser.newPage()
     

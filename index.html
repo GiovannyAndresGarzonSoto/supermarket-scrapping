@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriceHunter - Compara precios en tiempo real</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Compara precios en tus supermercados favoritos</h1>
+                <p class="tagline">Ahorra tiempo y dinero con nuestra tecnología inteligente de comparación en tiempo real</p>
+                <a href="#download" class="cta-button">
+                    <i class="fas fa-download"></i>
+                    Descargar App
+                </a>
+            </div>
+            <img src="phone-mockup.png" alt="App Preview" class="phone-mockup">
+        </div>
+    </section>
+
+    <section class="download-section" id="download">
+        <div class="download-grid">
+            <div class="qr-container">
+                <div class="qr-code"></div>
+                <p>Escanear para descargar</p>
+            </div>
+            
+            <div class="app-links">
+                <h2 style="margin-bottom: 2rem; color: var(--dark);">Descarga nuestra app</h2>
+                <a href="#" class="app-button">
+                    <i class="fab fa-apple"></i>
+                    <div>
+                        <small>Disponible en</small>
+                        <div>App Store</div>
+                    </div>
+                </a>
+                <a href="#" class="app-button">
+                    <i class="fab fa-google-play"></i>
+                    <div>
+                        <small>Disponible en</small>
+                        <div>Google Play</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Añadir más secciones según necesidad -->
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-bolt feature-icon"></i>
+                <h3>Comparación en Tiempo Real</h3>
+                <p>Precios actualizados al segundo de 10+ supermercados</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bell feature-icon"></i>
+                <h3>Alertas Personalizadas</h3>
+                <p>Recibe notificaciones cuando bajen los precios</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line feature-icon"></i>
+                <h3>Histórico de Precios</h3>
+                <p>¿Subirá o bajará? Conoce las tendencias</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="user-info">
+                    <img src="https://i.pravatar.cc/100?img=1" alt="Usuario" class="user-avatar">
+                    <div>
+                        <h4>Camila Rojas</h4>
+                        <small>Madre de 2 hijos</small>
+                    </div>
+                </div>
+                <p>"Con PriceHunter ahorro <span class="highlight">$15,000 semanales</span> en el supermercado. ¡Increíble!"</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="user-info">
+                    <img src="https://i.pravatar.cc/100?img=2" alt="Usuario" class="user-avatar">
+                    <div>
+                        <h4>Diego Pérez</h4>
+                        <small>Estudiante Universitario</small>
+                    </div>
+                </div>
+                <p>"La función de alertas me ha salvado para comprar en ofertas. ¡100% recomendado!"</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="user-info">
+                    <img src="https://i.pravatar.cc/100?img=3" alt="Usuario" class="user-avatar">
+                    <div>
+                        <h4>Ana López</h4>
+                        <small>Chef Profesional</small>
+                    </div>
+                </div>
+                <p>"Ahora puedo comparar marcas premium fácilmente. ¡Mi herramienta esencial!"</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PriceHunter</h3>
+                <p>Tu compañero inteligente para ahorrar en el supermercado</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Términos de uso</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:hola@pricehunter.cl"><i class="fas fa-envelope"></i> Email</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> +56 9 1234 5678</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Santiago, Chile</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function launchRocketAnimation() {
+            const rocket = document.createElement('div');
+            rocket.style = 'position: fixed; bottom: 0; right: 20%; font-size: 4rem; transition: 3s;';
+            rocket.innerHTML = '🚀';
+            document.body.appendChild(rocket);
+            
+            setTimeout(() => {
+                rocket.style.transform = 'translateY(-100vh) rotate(45deg)';
+            }, 100);
+        }
+
+        window.addEventListener('load', launchRocketAnimation);
+    </script>
+</body>
+</html>
